@@ -11,4 +11,5 @@ public class StartCommand implements CommandInterface {
     public void execute() {
         startModel.start();
     }
+
 }
