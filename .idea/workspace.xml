@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="dd7c4a97-6e7a-4264-a9fb-4ff08be0fede" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lastAndDetailDesc/behavior/command/StartCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lastAndDetailDesc/behavior/command/StartCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lastAndDetailDesc/behavior/行为型" beforeDir="false" afterPath="$PROJECT_DIR$/src/lastAndDetailDesc/behavior/行为型" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lastAndDetailDesc/desc" beforeDir="false" afterPath="$PROJECT_DIR$/src/lastAndDetailDesc/desc" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,11 +15,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="行为型" pinned="false" current-in-tab="true">
+      <file leaf-file-name="structType" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/lastAndDetailDesc/structType/structType">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="378">
+              <caret line="21" selection-start-line="21" selection-end-line="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="desc" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/lastAndDetailDesc/desc">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="442">
+              <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="行为型" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/lastAndDetailDesc/behavior/行为型">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="334">
-              <caret line="37" column="14" selection-start-line="37" selection-start-column="14" selection-end-line="37" selection-end-column="14" />
+            <state relative-caret-position="576">
+              <caret line="32" column="16" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -66,24 +83,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CarToSchool.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/lastAndDetailDesc/behavior/strategy/CarToSchool.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="36">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StrategyInterface.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/lastAndDetailDesc/behavior/strategy/StrategyInterface.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="36">
-              <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Student.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/lastAndDetailDesc/behavior/strategy/Student.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -114,6 +113,7 @@
         <option value="$PROJECT_DIR$/src/lastAndDetailDesc/structType/structType" />
         <option value="$PROJECT_DIR$/src/lastAndDetailDesc/behavior/command/StartCommand.java" />
         <option value="$PROJECT_DIR$/src/lastAndDetailDesc/behavior/行为型" />
+        <option value="$PROJECT_DIR$/src/lastAndDetailDesc/desc" />
       </list>
     </option>
   </component>
@@ -129,6 +129,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -152,84 +153,6 @@
               <item name="javaDesignP" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="lastAndDetailDesc" type="462c0819:PsiDirectoryNode" />
-              <item name="behavior" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="javaDesignP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="javaDesignP" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="lastAndDetailDesc" type="462c0819:PsiDirectoryNode" />
-              <item name="behavior" type="462c0819:PsiDirectoryNode" />
-              <item name="chain" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="javaDesignP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="javaDesignP" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="lastAndDetailDesc" type="462c0819:PsiDirectoryNode" />
-              <item name="behavior" type="462c0819:PsiDirectoryNode" />
-              <item name="command" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="javaDesignP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="javaDesignP" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="lastAndDetailDesc" type="462c0819:PsiDirectoryNode" />
-              <item name="behavior" type="462c0819:PsiDirectoryNode" />
-              <item name="iterator" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="javaDesignP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="javaDesignP" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="lastAndDetailDesc" type="462c0819:PsiDirectoryNode" />
-              <item name="behavior" type="462c0819:PsiDirectoryNode" />
-              <item name="mediator" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="javaDesignP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="javaDesignP" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="lastAndDetailDesc" type="462c0819:PsiDirectoryNode" />
-              <item name="behavior" type="462c0819:PsiDirectoryNode" />
-              <item name="observer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="javaDesignP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="javaDesignP" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="lastAndDetailDesc" type="462c0819:PsiDirectoryNode" />
-              <item name="behavior" type="462c0819:PsiDirectoryNode" />
-              <item name="state" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="javaDesignP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="javaDesignP" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="lastAndDetailDesc" type="462c0819:PsiDirectoryNode" />
-              <item name="behavior" type="462c0819:PsiDirectoryNode" />
-              <item name="strategy" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="javaDesignP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="javaDesignP" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="lastAndDetailDesc" type="462c0819:PsiDirectoryNode" />
-              <item name="behavior" type="462c0819:PsiDirectoryNode" />
-              <item name="templateMethod" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="javaDesignP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="javaDesignP" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="lastAndDetailDesc" type="462c0819:PsiDirectoryNode" />
-              <item name="creator" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="javaDesignP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="javaDesignP" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="lastAndDetailDesc" type="462c0819:PsiDirectoryNode" />
               <item name="structType" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -238,16 +161,18 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="lastAndDetailDesc" type="462c0819:PsiDirectoryNode" />
               <item name="structType" type="462c0819:PsiDirectoryNode" />
-              <item name="flyweight" type="462c0819:PsiDirectoryNode" />
+              <item name="adapter" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="AndroidView" />
     </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -337,7 +262,6 @@
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
@@ -349,7 +273,7 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
       <window_info anchor="bottom" id="Run with VisualVM" order="7" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18997575" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.196443" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
@@ -359,6 +283,7 @@
       <window_info anchor="bottom" id="Debug with VisualVM" order="7" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Messages" order="7" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -369,13 +294,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/lastAndDetailDesc/structType/flyweight/FlyweightFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/lastAndDetailDesc/structType/flyweight/Client.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
@@ -395,11 +313,6 @@
         <state relative-caret-position="180">
           <caret line="10" column="38" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lastAndDetailDesc/structType/structType">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-224" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lastAndDetailDesc/behavior/chain/ConcreteHandler2.java">
@@ -427,10 +340,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
-          <folding>
-            <element signature="e#175#176#0" expanded="true" />
-            <element signature="e#237#238#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -703,8 +612,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lastAndDetailDesc/behavior/行为型">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="37" column="14" selection-start-line="37" selection-start-column="14" selection-end-line="37" selection-end-column="14" />
+        <state relative-caret-position="576">
+          <caret line="32" column="16" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lastAndDetailDesc/structType/structType">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lastAndDetailDesc/desc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
         </state>
       </provider>
     </entry>
