@@ -23,7 +23,6 @@ public class SingletonNormal {
 
     //获取饿汉式对象
     public static SingletonNormal getInstanceE() {
-        singletonInstance = new SingletonNormal();
         return singletonInstance;
     }
 
