@@ -1,0 +1,248 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+
+public class Some {
+    public static void main(String[] args) {
+        System.out.println("hello java");
+        test();
+    }
+
+    /**
+     * 思路：先删除号码都不正确的，得到剩余的情况，此时确定一个数字为9，且位置在前两位
+     * 第三个条件告诉我们，9是正确的号码，但是位置不对，那么确定9在第一位置。
+     * 由此可以判断第一个里面符合要求的只能是6，在最后一位。
+     * 此时断定第三个中提到的两个号码是9，6，排除2，最后一位在5和8中选择，5在中间位置不符合描述，所以中间位置是8
+     */
+    public static void test() {
+        ArrayList<String> result = new ArrayList<>();
+        result.add("");
+        result.add("");
+        result.add("");
+        String[] one = {"2", "4", "6"};    //1个号码正确位置正确
+        String[] two = {"2", "5", "8"};    //1个号码正确位置不正确
+        String[] three = {"6", "9", "2"};  //2个号码正确位置都不正确
+        String[] four = {"1", "7", "4"};   //号码都不正确
+        String[] five = {"4", "1", "9"};   //1个号码正确位置不正确
+
+        //转换为List便于删除元素
+        ArrayList<String> list1 = new ArrayList<String>(Arrays.asList(one));
+        ArrayList<String> list2 = new ArrayList<String>(Arrays.asList(two));
+        ArrayList<String> list3 = new ArrayList<String>(Arrays.asList(three));
+        ArrayList<String> list5 = new ArrayList<String>(Arrays.asList(five));
+        //从多个数组中删除都不正确的元素
+        for (int i = 0; i < four.length; i++) {
+            reset(list1, four[i]);
+            reset(list2, four[i]);
+            reset(list3, four[i]);
+            reset(list5, four[i]);
+        }
+        System.out.println(list1);
+        System.out.println(list2);
+        System.out.println(list3);
+        System.out.println(list5);
+        System.out.println("==================================================");
+        // 先添加确定的元素到结果中
+        addDefiniteNum(result, list1, list2, list3, list5);
+        // 与位置相关，判断第一个元素的位置
+        for (int i = 0; i < list1.size(); i++) {
+            String temp = list1.get(i);
+            if (!"".equals(temp)) {   //假设这个是符合条件的位置
+                boolean re = compareOther(list2, list3, list5, temp, i);
+                if (!re) {  //如果不成立
+                    list1.set(i, "");
+                } else {     //1的描述成立，就确定了1个位置上的数字
+                    result.set(i, list1.get(i));
+                }
+            }
+        }
+        System.out.println(list1);
+        System.out.println(list2);
+        System.out.println(list3);
+        System.out.println(list5);
+        System.out.println(result);
+        System.out.println("==================================================");
+        // 到目前确定了两个数，那么这两个数的位置要从第三个List中确定
+        ArrayList<String> temp = new ArrayList<>();
+        // 获取已经确定的数字
+        for (int i = 0; i < result.size(); i++) {
+            if (!"".equals(result.get(i))) {
+                temp.add(result.get(i));
+            }
+        }
+        // 删除已确定的数字
+        list3.removeAll(temp);
+        int indexTemp = 0;
+        if (list3.size() == 1) {  //表示删除了两个数字，只剩了一个不符合要求的数字
+            String lastTemp = list3.get(0);
+            if (list2.contains(lastTemp)) {
+                int index = list2.indexOf(lastTemp);
+                indexTemp = index;
+                list2.set(index, "");       //list2中将不符合的数字替换
+            }
+        }
+        // 将List2中剩余的数字交换位置
+        resetPos(list2, indexTemp);
+        // 往结果中添加，如果结果位置已有数据就不添加
+        for (int i = 0; i < result.size(); i++) {
+            if ("".equals(result.get(i))) {
+                result.set(i, list2.get(i));
+            }
+        }
+        System.out.println(list1);
+        System.out.println(list2);
+        System.out.println(list3);
+        System.out.println(list5);
+        System.out.println(result);
+        System.out.println("==================================================");
+
+    }
+
+    /**
+     * 将这个数组中剩余的数据交换位置
+     *
+     * @param list2
+     * @param indexTemp ""在数组中所在位置
+     */
+    private static void resetPos(ArrayList<String> list2, int indexTemp) {
+        String temp = "";
+        switch (indexTemp) {
+            case 0:
+                temp = list2.get(1);
+                list2.set(1, list2.get(2));
+                list2.set(2, temp);
+                break;
+            case 1:
+                temp = list2.get(0);
+                list2.set(0, list2.get(2));
+                list2.set(2, temp);
+                break;
+            case 2:
+                temp = list2.get(1);
+                list2.set(1, list2.get(0));
+                list2.set(0, temp);
+                break;
+            default:
+                break;
+        }
+    }
+
+    /**
+     * 添加确定的数字到结果中
+     *
+     * @param result
+     * @param list1
+     * @param list2
+     * @param list3
+     * @param list5
+     */
+    private static void addDefiniteNum(ArrayList<String> result, ArrayList<String> list1, ArrayList<String> list2, ArrayList<String> list3, ArrayList<String> list5) {
+        ArrayList<String> temp1 = new ArrayList();
+        ArrayList<String> temp2 = new ArrayList();
+        ArrayList<String> temp3 = new ArrayList();
+        ArrayList<String> temp5 = new ArrayList();
+        temp1.addAll(list1);
+        temp2.addAll(list2);
+        temp3.addAll(list3);
+        temp5.addAll(list5);
+        ArrayList<String> tempResult = new ArrayList();
+        // 删除数组中的""
+        for (int i = 0; i < temp1.size(); i++) {
+            if ("".equals(temp1.get(i))) {
+                temp1.remove("");
+                i--;    //执行删除操作后，temp的size数据位置已经发生了变化
+            }
+        }
+        for (int i = 0; i < temp2.size(); i++) {
+            if ("".equals(temp2.get(i))) {
+                temp2.remove("");
+                i--;
+            }
+        }
+        for (int i = 0; i < temp3.size(); i++) {
+            if ("".equals(temp3.get(i))) {
+                temp3.remove("");
+                i--;
+            }
+        }
+        for (int i = 0; i < temp5.size(); i++) {
+            if ("".equals(temp5.get(i))) {
+                temp5.remove("");
+                i--;
+            }
+        }
+        // 如果只剩一个元素，那么这个元素就是符合条件的，添加到结果列表中去
+        if (temp1.size() == 1) {
+            tempResult.addAll(temp1);
+        }
+        if (temp2.size() == 1) {
+            tempResult.addAll(temp2);
+        }
+        if (temp3.size() == 1) {
+            tempResult.addAll(temp3);
+        }
+        if (temp5.size() == 1) {
+            tempResult.addAll(temp5);
+        }
+        // 在有一个正确元素的情况下
+        if(tempResult.size() == 1){
+            if (list1.contains(tempResult.get(0))) {  //List1包含这个正确的值
+                for (int i = 0; i < list1.size(); i++) {
+                    if (tempResult.get(0).equals(list1.get(i))) {   //如果位置正确，则符合要求
+                        result.set(i, tempResult.get(0));       //就把结果的其他位置先设置为这个值
+                    }
+                }
+            }
+            if (list2.contains(tempResult.get(0))) {  //List2包含这个正确的值
+                for (int i = 0; i < list2.size(); i++) {
+                    if (!tempResult.get(0).equals(list2.get(i))) {   //如果位置不正确，则符合要求
+                        result.set(i, tempResult.get(0));       //就把结果的其他位置先设置为这个值
+                    }
+                }
+            }
+            if (list3.contains(tempResult.get(0))) {  //List3包含这个正确的值
+                for (int i = 0; i < list3.size(); i++) {
+                    if (!tempResult.get(0).equals(list3.get(i))) {   //如果位置不正确，则符合要求
+                        result.set(i, tempResult.get(0));       //就把结果的其他位置先设置为这个值
+                    }
+                }
+            }
+        }
+
+
+    }
+
+    /**
+     * 判断描述是否成立
+     *
+     * @param list2
+     * @param list3
+     * @param list5
+     * @param temp
+     * @param i
+     * @return
+     */
+    private static boolean compareOther(ArrayList<String> list2, ArrayList<String> list3, ArrayList<String> list5, String temp, int i) {
+        if (temp.equals(list2.get(i))) {    //如果list2相同位置有相同的数字，说明1和2矛盾了，说明这个数字不符合要求
+            return false;
+        } else if (temp.equals(list3.get(i))) {
+            return false;
+        } else if (temp.equals(list5.get(i))) {
+            return false;
+        } else {
+            return true;
+        }
+    }
+
+    /**
+     * 设置确定不正确的数字为""
+     *
+     * @param list
+     * @param s
+     */
+    private static void reset(ArrayList list, String s) {
+        if (list.contains(s)) {
+            int index = list.indexOf(s);
+            list.set(index, "");
+        }
+    }
+}
